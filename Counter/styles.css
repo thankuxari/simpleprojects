@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Monsterrat',sans-serif;
+}
+
+.counter-container{
+    width: 550px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.counter-container h1{
+    font-size: 3rem;
+}
+
+.counter-container span{
+    font-size: 4.75rem;
+    font-weight: bold;
+    margin:0.75em 0em;
+}
+
+.btn-container button{
+    font-size: 1.1rem;
+    letter-spacing: 0.3em;
+    padding:0.4em 0.75em;
+    background-color: transparent;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.btn-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
