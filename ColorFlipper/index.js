@@ -18,13 +18,19 @@ document.addEventListener('DOMContentLoaded',()=>{
         colorTitleContainer.innerHTML = '';
 
         const colorTitle = document.createElement('h1');
-        const color = Math.floor(Math.random() * simpleColors.length);
-
+        
+        const color = generateRandomNumber();
+        
         //Change the background color
         document.body.style.backgroundColor = simpleColors[color];
         colorTitle.innerHTML = 'Background color: ' + simpleColors[color];
 
         colorTitleContainer.appendChild(colorTitle); 
         main.insertBefore(colorTitleContainer,main.firstChild);    
+    }
+
+
+    function generateRandomNumber(){
+        return Math.floor(Math.random() * simpleColors.length);
     }
 })

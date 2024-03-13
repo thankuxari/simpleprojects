@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         for(let i  = 0 ; i <= 5 ; i++){
             
             //Pick the random number
-            const color = Math.floor(Math.random() * simpleColors.length);
+            const color = generateRandomNumber();
             
             colorString += simpleColors[color];
         }
@@ -32,5 +32,10 @@ document.addEventListener('DOMContentLoaded',()=>{
         colorTitleContainer.appendChild(colorTitle); 
         main.insertBefore(colorTitleContainer,main.firstChild);   
         
+    }
+
+
+    function generateRandomNumber(){
+        return Math.floor(Math.random() * simpleColors.length);
     }
 })
