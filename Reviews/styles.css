@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;
+    font-family: 'Monsterrat',sans-serif;
+    display: flex;
+    background-color: rgb(237, 244, 253);
+}
+
+.title-container{
+    margin:5em 0em;
+}
+
+h1{
+    font-size: 2.5rem;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+}
+
+hr{
+    width: 135px;
+    border: 2px solid rgb(76, 156, 247);
+    margin:0 auto;
+}
+
+.review-container{
+    width: 525px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+
+.review-container img{
+    width: 150px;
+    height: 150px;
+    border-radius: 6em;
+}
+
+.review-container h4{
+    letter-spacing: 0.2em;
+    font-weight: 800;
+    margin:0.75em 0em;
+}
+
+.review-container h5{
+    text-transform: uppercase;
+    color: rgb(76, 156, 247);
+    margin-bottom: 0.75em;
+}
+
+.review-container p{
+    width: 420px;
+    height: 100px;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.button-container{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin:1.2em 0em;
+}
+
+.button-container button{
+    border: none;
+    background-color: #fff;
+    color:rgb(76, 156, 247);
+    cursor: pointer;
+}
+
+.button-container i {
+    font-size: 1.3rem;
+}
+
+#suprise-me{
+    padding:0.3em 0.75em;
+    border-radius: 0.75em;
+    background-color: rgb(226, 236, 248);
+    border:2px solid rgb(76, 156, 247);
+    color:rgb(76, 156, 247);
+    cursor: pointer;
+}
+
