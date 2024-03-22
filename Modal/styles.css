@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0; 
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: 'Monsterrat',sans-serif;
+    background-image:url(images/free-stock-photos-12.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-static{
+    background-color: #fff;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1.2em;
+}
+
+.modal-static h1{
+    font-size: 4.5rem;
+}
+
+.modal-static .modal-button{
+    margin-top:2.75em;
+    font-size: 1.25rem;
+    padding:0.275em 1.5em;
+    border-radius: 0.5em;
+    background-color: rgb(113, 220, 234);
+    color:#fff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.modal-static .modal-button:hover{
+    color:rgb(113, 220, 234);
+    background-color: white;
+    border:1px solid rgb(113, 220, 234);
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(120, 119, 119, 0.6); /* Semi-transparent black overlay */
+    z-index: 1; /* Ensure the overlay is above the background image */
+    display: none; /* Initially hidden */
+    transition: background-color 0.5s ease; /* Smooth transition for opacity change */
+  }
+
+.modal-active{
+    position:fixed;
+    display: none;
+    background-color: #fff;
+    width: 700px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2em;
+    z-index: 2;
+}
+
+.modal-active #close-btn{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color:red;
+}
+
