@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miss+Fajardose&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(233, 248, 250);
+}
+
+.title{
+    font-size: 3.5rem;
+    font-family: 'Miss Fajardose',sans-serif;
+    color:rgb(242, 196, 112);
+}
+
+.question-container{
+    font-family: 'Monsterrat',sans-serif;
+    margin-top:2.75em;
+    width: 750px;
+    height: 85px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.3em;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.question-container h1{
+    font-size: 1.25rem;
+    letter-spacing: 0.25em;
+}
+
+.question-container .title-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.question-container p{
+    display: none;
+}
