@@ -27,11 +27,12 @@ body{
     font-family: 'Monsterrat',sans-serif;
     margin-top:2.75em;
     width: 750px;
-    height: 85px;
+    height: 105px;
     background-color: #fff;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     border-radius: 1.3em;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
@@ -43,10 +44,34 @@ body{
 
 .question-container .title-btn{
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 600px;
+    justify-content: space-between;
+}
+
+hr.active{
+    margin-top:0.75em;
+    width: 600px;
+    border: 1px solid #ccc;
+}
+
+.question-container .title-btn button{
+    background-color: transparent;
+    padding:0.175em;
+    color:orange;
+    border:2px solid orange;
+    cursor: pointer;
 }
 
 .question-container p{
-    display: none;
+    opacity: 0;
+    height: 0;
+    
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.question-container p.active {
+    opacity: 1;
+    height: auto;
+    width: 600px;
 }
